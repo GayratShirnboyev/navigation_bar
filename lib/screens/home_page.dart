@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -5,8 +7,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(child: Text('Home')),
+    return Column(
+      children: [
+        Container(
+          child: Center(child: Container(color: Color.fromARGB(255, 255, 7, 193),)),
+        ),TextField(decoration: InputDecoration(label: Text('data')),)
+      ],
     );
   }
 }
+

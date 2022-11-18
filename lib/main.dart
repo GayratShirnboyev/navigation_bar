@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_bar/farm_page.dart';
 import 'package:navigation_bar/screens/home_page.dart';
 import 'package:navigation_bar/screens/office_page.dart';
 import 'package:navigation_bar/screens/school_page.dart';
+import 'package:navigation_bar/screens/village_page.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: NavigationBar(),
   ));
 }
@@ -22,6 +25,8 @@ class _NavigationBarState extends State<NavigationBar> {
     HomePage(),
     OfficePage(),
     SchoolPage(),
+    Foodbank(),
+    VillagePage()
   ];
 
   @override
@@ -37,6 +42,8 @@ class _NavigationBarState extends State<NavigationBar> {
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'HOME'),
           BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Office'),
           BottomNavigationBarItem(icon: Icon(Icons.school), label: 'SCHOOL'),
+          BottomNavigationBarItem(icon: Icon(Icons.food_bank), label: 'food bank'),
+          BottomNavigationBarItem(icon: Icon(Icons.villa), label: 'Village'),
         ],
         currentIndex: _currentIndex,
       ),

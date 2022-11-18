@@ -6,7 +6,7 @@ class OfficePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Center(child: Text('Office')),
+      child: Center(child: Container(color:Colors.blue)),
     );
   }
 }
