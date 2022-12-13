@@ -44,6 +44,7 @@ class _NavigationBarState extends State<NavigationBar> {
           BottomNavigationBarItem(icon: Icon(Icons.school), label: 'SCHOOL'),
           BottomNavigationBarItem(icon: Icon(Icons.food_bank), label: 'food bank'),
           BottomNavigationBarItem(icon: Icon(Icons.villa), label: 'Village'),
+          BottomNavigationBarItem(icon: Icon(Icons.villa), label: 'Village'),
         ],
         currentIndex: _currentIndex,
       ),
